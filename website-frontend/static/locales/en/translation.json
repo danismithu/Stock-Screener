@@ -1,0 +1,19 @@
+{
+  "dashboard": {
+    "title": "Stock Screener!",
+    "filters": {
+      "roa": "Return on Assets",
+      "npm": "Net Profit Margin",
+      "analyst_recom": "Analyst Recommendation",
+      "optionShort": "Option/Short",
+      "sma20": "Simple Moving Average 20 day",
+      "sma50": "Simple Moving Average 50 day"
+    },
+    "cta": "Filter"
+  },
+  "notFound": {
+    "title": "Sorry! Page not found",
+    "text": "This page does not exist.",
+    "cta": "To home"
+  }
+}

@@ -1,0 +1,85 @@
+export const ROA = [
+    ["fa_roa_pos", "Positive"],
+    ["fa_roa_neg", "Negative"],
+    ["fa_roa_u-40", "Under 40%"],
+    ["fa_roa_u-35", "Under 35%"],
+    ["fa_roa_u-30", "Under 30%"],
+    ["fa_roa_u-25", "Under 25%"],
+    ["fa_roa_u-20", "Under 20%"],
+    ["fa_roa_u-15", "Under 15%"],
+    ["fa_roa_u-10", "Under 10%"],
+    ["fa_roa_u-5", "Under 5%"],
+    ["fa_roa_o5", "Over 5%"],
+    ["fa_roa_o10", "Over 10%"],
+    ["fa_roa_o15", "Over 15%"],
+    ["fa_roa_o20", "Over 20%"],
+    ["fa_roa_o25", "Over 25%"],
+    ["fa_roa_o30", "Over 30%"],
+    ["fa_roa_o35", "Over 35%"],
+    ["fa_roa_o40", "Over 40%"],
+];
+
+export const NET_PROFIT = [
+    ["fa_netmargin_pos", "Positive"],
+    ["fa_netmargin_neg", "Negative"],
+    ["fa_netmargin_u40", "Under 40%"],
+    ["fa_netmargin_u35", "Under 35%"],
+    ["fa_netmargin_u30", "Under 30%"],
+    ["fa_netmargin_u25", "Under 25%"],
+    ["fa_netmargin_u20", "Under 20%"],
+    ["fa_netmargin_u15", "Under 15%"],
+    ["fa_netmargin_u10", "Under 10%"],
+    ["fa_netmargin_u5", "Under 5%"],
+    ["fa_netmargin_o5", "Over 5%"],
+    ["fa_netmargin_o10", "Over 10%"],
+    ["fa_netmargin_o15", "Over 15%"],
+    ["fa_netmargin_o20", "Over 20%"],
+    ["fa_netmargin_o25", "Over 25%"],
+    ["fa_netmargin_o30", "Over 30%"],
+    ["fa_netmargin_o35", "Over 35%"],
+    ["fa_netmargin_o40", "Over 40%"],
+];
+
+export const ANALYST_RECOM = [
+    ["an_recom_strongbuy", "Strong buy"],
+    ["an_recom_buy_better", "Buy or better"],
+    ["an_recom_buy", "Buy"],
+    ["an_recom_holdbetter", "Hold or better"],
+    ["an_recom_hold", "Hold"],
+    ["an_recom_holdworse", "Hold or worse"],
+    ["an_recom_sell", "Sell"],
+    ["an_recom_sellworse", "Sell or worse"],
+    ["an_recom_strongsell", "Strong sell"],
+];
+
+export const SHORT_OPTION = [["sh_opt_option", "Optionable"], ["sh_opt_short", "Shortable"], ["sh_opt_optionshort", "Optionable and shortable"]];
+
+export const SMA50 = [
+    ["ta_sma50_pb", "Price below"],
+    ["ta_sma50_pb10", "Price 10% below"],
+    ["ta_sma50_pb20", "Price 20% below"],
+    ["ta_sma50_pb30", "Price 30% below"],
+    ["ta_sma50_pb40", "Price 40% below"],
+    ["ta_sma50_pb50", "Price 50% below"],
+    ["ta_sma50_pa", "Price above"],
+    ["ta_sma50_pa10", "Price 10% above"],
+    ["ta_sma50_pa20", "Price 20% above"],
+    ["ta_sma50_pa30", "Price 30% above"],
+    ["ta_sma50_pa40", "Price 40% above"],
+    ["ta_sma50_pa50", "Price 50% above"],
+];
+
+export const SMA20 = [
+    ["ta_sma20_pb", "Price below"],
+    ["ta_sma20_pb10", "Price 10% below"],
+    ["ta_sma20_pb20", "Price 20% below"],
+    ["ta_sma20_pb30", "Price 30% below"],
+    ["ta_sma20_pb40", "Price 40% below"],
+    ["ta_sma20_pb50", "Price 50% below"],
+    ["ta_sma20_pa", "Price above"],
+    ["ta_sma20_pa10", "Price 10% above"],
+    ["ta_sma20_pa20", "Price 20% above"],
+    ["ta_sma20_pa30", "Price 30% above"],
+    ["ta_sma20_pa40", "Price 40% above"],
+    ["ta_sma20_pa50", "Price 50% above"],
+];

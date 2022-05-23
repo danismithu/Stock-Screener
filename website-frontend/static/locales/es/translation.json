@@ -1,0 +1,19 @@
+{
+  "dashboard": {
+    "title": "Stock Screener!",
+    "filters": {
+      "roa": "Retorno de Activos",
+      "npm": "Margen de Ganancia Neto",
+      "analyst_recom": "Recomendación de Analistas",
+      "optionShort": "Opciones/A corto",
+      "sma20": "Promedio Móvil Simple 20 días",
+      "sma50": "Promedio Móvil Simple 50 días"
+    },
+    "cta": "Filtrar"
+  },
+  "notFound": {
+    "title": "¡Lo sentimos! Página no encontrada",
+    "text": "Está página no existe.",
+    "cta": "Regresar"
+  }
+}

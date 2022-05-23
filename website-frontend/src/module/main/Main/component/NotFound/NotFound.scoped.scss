@@ -1,0 +1,12 @@
+@import "asset/style/base";
+
+.not-found {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30vh;
+
+  &__cta {
+    margin-top: 20px;
+  }
+}
