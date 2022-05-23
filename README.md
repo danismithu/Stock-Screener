@@ -8,6 +8,10 @@ Simple website that has six different filters to get stocks. The filters are
 - Simple Moving Average 20 day
 - Simple Moving Average 50 day
 
+## Run
+To start the front end run with `yarn start` inside website-frontend.
+Then, run inside website `python manage.py runserver` to start the backend.
+
 The backend uses the library from https://github.com/mariostoev/finviz
 
 Use `pip install -U git+https://github.com/mariostoev/finviz` to install the library
