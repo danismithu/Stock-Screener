@@ -1,13 +1,15 @@
-@import "asset/style/base";
+@import "asset/style/theme";
 
 .stocks {
-  background-color: white;
-  border-radius: 12px;
   width: 100%;
   max-width: 210px;
   max-height: 168px;
+  position: relative;
+  background-color: white;
+  border-radius: 12px;
   box-shadow: 0px 4px 15px rgba(black, 0.08);
   display: flex;
+  overflow: hidden;
   flex-direction: column;
   align-items: center;
   padding: 45px 0;
@@ -20,5 +22,40 @@
     & .stocks__name {
       transform: scale(1.06);
     }
+
+    & .stocks__decoration {
+      background-color: rgba($primary-light, 0.6);
+    }
+  }
+
+  &__decoration {
+    transition: 0.3s;
+    width: 50%;
+    height: 150%;
+    position: absolute;
+    top: -25%;
+    left: -30%;
+    border-radius: 50%;
+    background-color: rgba($primary-light, 0.4);
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    width: 100%;
+  }
+
+  &__name {
+    transition: 0.3s;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  &__icon {
+    margin-right: 25px;
+    display: flex;
+    justify-content: center;
   }
 }

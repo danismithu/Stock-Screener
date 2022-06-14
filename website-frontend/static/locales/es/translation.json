@@ -15,5 +15,8 @@
     "title": "¡Lo sentimos! Página no encontrada",
     "text": "Está página no existe.",
     "cta": "Regresar"
+  },
+  "error": {
+    "error500": "¡Lo sentimos! Ocurrió un error, inténtalo de nuevo"
   }
 }

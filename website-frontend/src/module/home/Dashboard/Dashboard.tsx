@@ -4,14 +4,12 @@ import {useTranslation} from "react-i18next";
 import {ScreenerAJAXWebService} from "service/ScreenerAJAXWebService";
 import {ANALYST_RECOM, NET_PROFIT, ROA, SHORT_OPTION, SMA20, SMA50} from "../type";
 
-import {Button, Spin} from "antd";
-import {LoadingOutlined} from "@ant-design/icons";
+import {Button, message} from "antd";
 import OptionSelect from "./component/OptionSelect/OptionSelect";
 import Stocks from "./component/Stocks/Stocks";
+import Loading from "module/common/component/Loading/Loading";
 
 import "./Dashboard.scoped.scss";
-
-const antIcon = <LoadingOutlined style={{fontSize: 48}} spin />;
 
 const Dashboard: React.FC = () => {
     const {t} = useTranslation();
@@ -26,15 +24,19 @@ const Dashboard: React.FC = () => {
 
     const fetchStocks = async () => {
         setLoading(true);
-        const response = await ScreenerAJAXWebService.screenStocks({
-            roaFilter: roaFilter || "",
-            npmFilter: npmFilter || "",
-            analystRecomFilter: analystRecomFilter || "",
-            shortOptionFilter: shortOptionFilter || "",
-            sma20Filter: sma20Filter || "",
-            sma50Filter: sma50Filter || "",
-        });
-        setStocks(response.stocks);
+        try {
+            const response = await ScreenerAJAXWebService.screenStocks({
+                roaFilter: roaFilter || "",
+                npmFilter: npmFilter || "",
+                analystRecomFilter: analystRecomFilter || "",
+                shortOptionFilter: shortOptionFilter || "",
+                sma20Filter: sma20Filter || "",
+                sma50Filter: sma50Filter || "",
+            });
+            setStocks(response.stocks);
+        } catch (e) {
+            message.error(t("error.error500"));
+        }
         setLoading(false);
     };
 
@@ -75,9 +77,9 @@ const Dashboard: React.FC = () => {
 
     return (
         <section className="dashboard">
-            <h2>{t("dashboard.title")}</h2>
+            <h1 className="dashboard__title">{t("dashboard.title")}</h1>
             <div className="dashboard__filters-container">
-                <div>
+                <div className="dashboard__filters">
                     <div className="dashboard__select-container">
                         <OptionSelect title={t("dashboard.filters.roa")} item={ROA} handleChange={handleRoaChange} />
                         <OptionSelect title={t("dashboard.filters.npm")} item={NET_PROFIT} handleChange={handleNpmChange} />
@@ -93,7 +95,7 @@ const Dashboard: React.FC = () => {
                     {t("dashboard.cta")}
                 </Button>
             </div>
-            {loading ? <Spin indicator={antIcon} /> : <StocksContainer />}
+            {loading ? <Loading /> : <StocksContainer />}
         </section>
     );
 };

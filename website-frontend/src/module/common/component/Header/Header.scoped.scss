@@ -1,0 +1,16 @@
+@import "asset/style/theme";
+
+.header {
+  background-color: $primary;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+
+  &__logo {
+    height: 80px;
+    cursor: pointer;
+  }
+}

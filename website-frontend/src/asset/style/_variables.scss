@@ -1,2 +1,15 @@
 $body: #f6f6fb !default;
 $primary: #0091ff !default;
+$primary-light: #75c4ff !default;
+
+// Stock chart colors
+$positive: #336d16 !default;
+$negative: #ff0000 !default;
+
+$font-r: "Source Sans Pro", sans-serif !default;
+
+// Export variables to use in components
+:export {
+  positive: $positive;
+  negative: $negative;
+}

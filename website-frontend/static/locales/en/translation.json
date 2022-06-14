@@ -15,5 +15,8 @@
     "title": "Sorry! Page not found",
     "text": "This page does not exist.",
     "cta": "To home"
+  },
+  "error": {
+    "error500": "Sorry! Something went wrong, please try again"
   }
 }

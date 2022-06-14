@@ -70,6 +70,13 @@ const config = {
           },
         ],
       },
+      {
+        test: /\.(png|jpe?g|gif|svg|mp4)$/,
+        type: "asset/resource",
+        generator: {
+            filename: "static/img/[name].[hash:8].[ext]",
+        },
+    },
     ],
   },
   devServer: {

@@ -1,9 +1,19 @@
-@import "asset/style/base";
+@import "asset/style/theme";
 
 .dashboard {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  &__title {
+    text-align: center;
+    @include breakpoint(xs) {
+      font-size: 38px;
+    }
+    @include breakpoint(xs-standar) {
+      font-size: 32px;
+    }
+  }
 
   &__select-container {
     width: 750px;
@@ -11,16 +21,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
+
+    @include breakpoint(xs-standar) {
+      width: 100%;
+      flex-direction: column;
+      margin: 0;
+    }
   }
 
   &__filters-container {
     display: flex;
     flex-direction: row;
     align-items: center;
+    background-color: white;
+    padding: 10px 40px;
+    border-radius: 16px;
+    box-shadow: 0px 4px 15px rgba(black, 0.08);
+
+    @include breakpoint(xs) {
+      flex-direction: column;
+      padding-bottom: 30px;
+    }
+    @include breakpoint(xs-standar) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 
   &__stocks-container {
-    width: 1000px;
+    width: 90%;
+    justify-items: center;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     column-gap: 24px;

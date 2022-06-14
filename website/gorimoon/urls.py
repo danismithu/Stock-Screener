@@ -20,4 +20,5 @@ from app import views;
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('get-stocks/', views.get_stocks),
+    path('get-stock-price/', views.get_stock_price),
 ]

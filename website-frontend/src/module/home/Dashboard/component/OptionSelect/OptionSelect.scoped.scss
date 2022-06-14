@@ -1,9 +1,13 @@
-@import "asset/style/base";
+@import "asset/style/theme";
 
 .option-select {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @include breakpoint(xs-standar) {
+    margin-bottom: 15px;
+  }
 
   &__title {
     font-size: 16px;

@@ -1,0 +1,52 @@
+@import "asset/style/theme";
+
+.stock-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 150px;
+    background-color: $primary-light;
+    @include breakpoint(xs) {
+      height: 120px;
+    }
+    @include breakpoint(xs-standar) {
+      height: 90px;
+    }
+
+    .header-title {
+      @include breakpoint(xs-standar) {
+        font-size: 32px;
+      }
+    }
+
+    .header-background {
+      position: absolute;
+      top: 0;
+      width: 100%;
+      height: 150px;
+      @include breakpoint(xs) {
+        height: 120px;
+      }
+      @include breakpoint(xs-standar) {
+        height: 90px;
+      }
+    }
+  }
+
+  &__chart-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .chart-container {
+      max-width: 90%;
+    }
+  }
+}

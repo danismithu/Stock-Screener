@@ -10,3 +10,9 @@ export interface ScreenerAJAXRequest {
     sma20Filter: string;
     sma50Filter: string;
 }
+
+export interface PriceAJAXRequest {
+    ticker: string;
+    startDate: string;
+    endDate: string;
+}

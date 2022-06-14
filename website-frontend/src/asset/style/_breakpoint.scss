@@ -1,0 +1,46 @@
+@mixin breakpoint($class) {
+  @media (min-width: $class) {
+    @content;
+  }
+  @if $class==fix {
+    @media (max-width: 1999px) {
+      @content;
+    }
+  } @else if $class==xs {
+    @media (max-width: 1000px) {
+      @content;
+    }
+  } @else if $class==xs-standar {
+    @media (max-width: 767px) {
+      @content;
+    }
+  } @else if $class==xs-landscape {
+    @media (max-width: 767px) and (orientation: landscape) {
+      @content;
+    }
+  } @else if $class==md-mac {
+    @media (max-width: 1440px) {
+      @content;
+    }
+  } @else if $class==sm {
+    @media (min-width: 768px) {
+      @content;
+    }
+  } @else if $class==md {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  } @else if $class==lg {
+    @media (min-width: 1200px) {
+      @content;
+    }
+  } @else if $class==xl {
+    @media (min-width: 1680px) {
+      @content;
+    }
+  } @else if $class==ipadProLandscape {
+    @media (max-device-width: 1366px) and (orientation: landscape) {
+      @content;
+    }
+  }
+}

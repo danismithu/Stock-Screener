@@ -1,0 +1,36 @@
+$font-path: "asset/fonts";
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("#{$font-path}/SourceSansPro-ExtraLight.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("#{$font-path}/SourceSansPro-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("#{$font-path}/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("#{$font-path}/SourceSansPro-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url("#{$font-path}/SourceSansPro-Black.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
